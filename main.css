@@ -1,0 +1,47 @@
+h1 {
+    font-family: 'sansation', 'sans-serif';
+    font-size: 48px;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin: 0px;
+    color: rgb(240, 240, 240);
+    background-color: rgb(23, 23, 23);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+}
+body {
+    font-family: 'Segoe UI', 'sans-serif';
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+    color: rgb(240, 240, 240);
+    background-color: rgb(15, 15, 15);
+    margin: 0px;
+}
+img {
+    align-content: center;
+    height: 50vh;
+    width: auto;
+    margin: 40px 0px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+}
+button {
+    width: 192px;
+    height: 96px;
+    padding: 24px 48px;
+    margin: 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(23, 23, 23);
+    color: rgb(240, 240, 240);
+    font-size: 24px;
+    font-family: 'Segoe UI', 'sans-serif';
+    font-weight: bold;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+}
+button:hover {
+    background-color: rgb(39, 39, 39);
+    scale: 1.05;
+    transition: 125ms ease-in-out;
+}

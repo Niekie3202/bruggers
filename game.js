@@ -1,10 +1,38 @@
 const questions = [
   {
     type: "image",
-    src: "ai_image1.jpg",
-    question: "Is dit AI of echt?",
+    src: "image1_ai.jpg",
+    question: "Is deze afbeelding AI of echt?",
     answer: "AI",
-    explanation: "Correct! Deze afbeelding is door AI gemaakt vanwege de onnatuurlijke handen."
+    explanation: "Correct!"
+  },
+  {
+    type: "image",
+    src: "image2_echt.jpg",
+    question: "Is deze afbeelding AI of echt?",
+    answer: "Echt",
+    explanation: "Correct!",
+  },
+  {
+    type: "image",
+    src: "image3_echt.jpg",
+    question: "Is deze afbeelding AI of echt?",
+    answer: "Echt",
+    explanation: "Correct!",
+  },
+  {
+    type: "image",
+    src: "image4_ai.jpg",
+    question: "Is deze afbeelding AI of echt?",
+    answer: "AI",
+    explanation: "Correct!",
+  },
+  {
+    type: "image",
+    src: "image5_ai.jpg",
+    question: "Is deze afbeelding AI of echt?",
+    answer: "AI",
+    explanation: "Correct!",
   },
   {
     type: "text",
@@ -34,15 +62,19 @@ function showQuestion() {
   } else {
     html += `<p>${q.content}</p>`;
   }
-  html += `<button onclick="checkAnswer('Real')">Real</button>
-           <button onclick="checkAnswer('AI')">AI</button>`;
+  html += `
+    <div class="button-row">
+        <button onclick="checkAnswer('Real')">Real</button>
+        <button onclick="checkAnswer('AI')">AI</button>
+    </div>
+`;
   container.innerHTML = html;
 }
 
 function checkAnswer(choice) {
-  const q = questions[current];
-  if(choice === q.answer) {
-    alert(q.explanation);
+  const q = questions[current];0
+  if(choice === q.answer) {0
+    alert(q.explanation);0
     score++;
   } else {
     alert("Fout! " + q.explanation);
