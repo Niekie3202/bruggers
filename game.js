@@ -110,3 +110,4 @@ function checkAnswer(choice) {
 }
 
 showQuestion();
+/* v0.2.1 11-12-25@01:20 */
