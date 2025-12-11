@@ -59,6 +59,50 @@ const questions = [
 
 let current = 0;
 let score = 0;
+let gameStarted = false;
+
+function showHomeButton() {
+  const homeButtonContainer = document.getElementById("home-button-container");
+  homeButtonContainer.innerHTML = `<button class="home-button" onclick="showMenu()"><img src="home.png" alt="home"></button>`;
+}
+
+function hideHomeButton() {
+  document.getElementById("home-button-container").innerHTML = "";
+}
+
+function showMenu() {
+  hideHomeButton();
+  const menuContainer = document.getElementById("menu-container");
+  const questionContainer = document.getElementById("question-container");
+  questionContainer.innerHTML = "";
+  menuContainer.innerHTML = `
+    <div style="margin-top: 80px;">
+      <button onclick="startGame()">Spelen</button>
+      <button onclick="showInstructions()">Uitleg</button>
+    </div>
+  `;
+}
+
+function startGame() {
+  gameStarted = true;
+  document.getElementById("menu-container").innerHTML = "";
+  current = 0;
+  score = 0;
+  showHomeButton();
+  showQuestion();
+}
+
+function showInstructions() {
+  document.getElementById("menu-container").innerHTML = "";
+  showHomeButton();
+  const questionContainer = document.getElementById("question-container");
+  questionContainer.innerHTML = `
+    <div style="margin: 40px; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
+      <h2>Uitleg_titel</h2>
+      <p>Paragraaf</p>
+    </div>
+  `;
+}
 
 function showMessage(message) {
   const messageBox = document.createElement("div");
@@ -109,5 +153,4 @@ function checkAnswer(choice) {
   }
 }
 
-showQuestion();
-/* v0.2.1 11-12-25@01:20 */
+showMenu();
