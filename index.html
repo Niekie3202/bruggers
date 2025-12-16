@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="main.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <html lang="nl">
 <head>
-<meta charset="UTF-8">
-<title>Real or Robot?</title>
+  <meta charset="UTF-8">
+  <title>Real or Robot?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
 
-<h1>Real or Robot?</h1>
-<div id="home-button-container"></div>
-<div id="menu-container"></div>
-<div id="question-container"></div>
-<div id="score"></div>
-<div id="version"><a href="https://github.com/Niekie3202/bruggers">v0.2.2</a></div>
+  <h1>Real or Robot?</h1>
 
-<script src="game.js"></script>
+  <div id="home-button-container"></div>
+  <div id="menu-container"></div>
+  <div id="question-container"></div>
+  <div id="score"></div>
+
+  <div id="version">
+    <a href="https://github.com/Niekie3202/bruggers">v0.2.2</a>
+  </div>
+
+  <!-- Geluiden -->
+  <audio id="sound-correct" src="644955__craigscottuk__quiz-gameshow-correct-ping-08.mp3"></audio>
+  <audio id="sound-wrong" src="650842__andreas__wrong-answer-buzzer.mp3"></audio>
+
+  <audio id="bg-music" src="background.mp3" loop></audio>
+  <script src="game.js"></script>
 </body>
 </html>
